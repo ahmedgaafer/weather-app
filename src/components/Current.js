@@ -1,5 +1,6 @@
 import './assets/css/Current.css'
 
+//https://coolors.co/5c03fa
 export default function Current(props){
     const { data, isCelsius, location } = props;
     console.log(data)
