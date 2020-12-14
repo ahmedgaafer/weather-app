@@ -2,11 +2,12 @@ body, html{
     width: 100%;
     height: 100%;
     margin: 0;
-    background: hsla(302, 98%, 50%, 1);
-    background: linear-gradient(90deg, hsla(268, 98%, 49%, 0.6)  50%,  hsla(302, 98%, 50%, 0.3) 100%);
-    background: -moz-linear-gradient(90deg, hsla(268, 98%, 49%, 0.6)  50%,  hsla(302, 98%, 50%, 0.3) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(268, 98%, 49%, 0.6)  50%,  hsla(302, 98%, 50%, 0.3) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#fc03f4", endColorstr="#7703f9", GradientType=1 );
+    background: hsla(238, 100%, 71%, 1);
+    background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696eff", endColorstr="#f8acff", GradientType=1 );
     background-position: center;
     background-repeat: no-repeat;
     

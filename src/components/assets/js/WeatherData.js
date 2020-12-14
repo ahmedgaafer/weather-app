@@ -15,3 +15,7 @@ export async function getWeatherData(IP){
  .then(data => data)
 }
 
+export async function isMetric({country}){  
+    const imperial = ['United States of America', 'Liberia', 'Myanmar']
+    return ! imperial.includes(country);
+}

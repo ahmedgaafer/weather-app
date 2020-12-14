@@ -1,40 +1,20 @@
-import { React, Component} from 'react';
+import { React, useContext} from 'react';
 import './assets/css/WeatherCard.css';
-import { getIP, getWeatherData } from './assets/js/WeatherData';
+
 import Current from './Current';
+import Forecast from './Forecast';
 
-export default class WeatherCard extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            IP: undefined,
-            current: {},
-            forecast: {},
-            location: {},
-            isCelsius: true,
-        }
-    }
+import { Store } from '../App';
 
-    async componentDidMount(){
-        const IP = await getIP();
-        const Data = await getWeatherData(IP); 
-        console.log(Data)
-        this.setState({
-            ...this.state,
-            IP,
-            current: Data.current,
-            forecast: Data.forecast,
-            location: Data.location,
-        });
-    }
+export default function WeatherCard (props){
+
+    const [context] = useContext(Store);
     
-    render(){
-
-        return(
-            <div className="frame">
-                <Current data={this.state.current} isCelsius={this.state.isCelsius} location={this.state.location} />
-                <div>b</div>
-            </div>
-        )
-    }
+    return (
+        <div className="frame">
+            <Current data={context.current} isMetric={context.isMetric} location={context.location} />
+            <Forecast data={context.forecast} isMetric={context.isMetric}/>
+        </div>
+    )
+    
 }
