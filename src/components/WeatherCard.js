@@ -13,7 +13,7 @@ export default function WeatherCard (props){
     return (
         <div className="frame">
             <Current data={context.current} isMetric={context.isMetric} location={context.location} />
-            <Forecast data={context.forecast} isMetric={context.isMetric}/>
+            <Forecast data={context.forecast} isMetric={context.isMetric} />
         </div>
     )
     
