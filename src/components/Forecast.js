@@ -14,6 +14,7 @@ export default function Forecast(props){
                 forecast.map((element, index) =>{
                     return <Item data={element} isMetric={isMetric} index={index} key={element.date}/>
                 })
+                
             }
         </div>
     )
