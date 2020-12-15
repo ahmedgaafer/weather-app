@@ -19,12 +19,16 @@
     background-image: url('../images/background/1.png');
     box-shadow: 0 5px 5px #122C3D;
     color:#BF3237 !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 
 .middle{
     background-image: url('../images/background/2.png');
     box-shadow: 0 5px 5px #54152A;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 
 
 }
@@ -32,6 +36,8 @@
 .night{
     background-image: url('../images/background/3.png');
     box-shadow: 0 5px 5px #344F92;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .location{
