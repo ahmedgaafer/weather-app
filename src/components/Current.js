@@ -26,7 +26,7 @@ export default function Current(props){
                     <div className="degree">{isMetric? data.temp_c+'C' : data.temp_f+'F'}º</div>
                     <div className="condition spacing">{(data && data.condition)?data.condition.text:''}</div>
                 </div>
-                <div className="location">{location.country}</div>
+                <div className="location">{`${location.name}, ${location.country}`}</div>
             </div>
             <div className="metaData">
                 <div>
