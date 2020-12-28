@@ -73,7 +73,6 @@
     letter-spacing: 3px;
 }
 
-
 .metaData{
     display: flex;
     direction: row;
@@ -82,12 +81,9 @@
     text-align: center;
 }
 
-
-
 .line-break{
     border-right: 2px solid white;
 }
-
 
 /*For smaller screens*/
 
@@ -106,6 +102,5 @@
     .location{
         padding-top: 4vh;
         text-align: center;
-    }
-   
+    }   
 }
